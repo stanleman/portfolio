@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f623712ea0.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./public/style.css" />
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  </head>
+  <body class="font-[Poppins] bg-[#141414]">
+    <div class="w-[100vw] max-w-full">
+      <!-- <video
+          src="../assets/makoto2.mp4"
+          class="absolute top-0 -z-10 h-[100vh] w-full object-cover flex justify-center items-center"
+          autoplay
+          muted
+          loop
+        ></video> -->
+      <div
+        class="absolute h-screen w-[25vw] max-w-[25%] m-0 z-[100] bg-[url('../assets/header1.jpg')] bg-center object-contain blur-sm"
+      ></div>
+      <div
+        class="absolute h-screen w-[25vw] max-w-[25%] m-0 left-[24.7vw] z-[100] bg-[url('../assets/header2.jpg')] bg-center blur-sm"
+      ></div>
+      <div
+        class="absolute h-screen w-[25vw] max-w-[25%] m-0 left-[49.4vw] z-[100] bg-[url('../assets/header5.jpg')] bg-center blur-sm"
+      ></div>
+      <div
+        class="absolute h-screen w-[25.4vw] max-w-[28%] m-0 left-[74vw] z-[100] bg-[url('../assets/header7.jpg')] bg-left blur-sm"
+      ></div>
+    </div>
+
+    <div
+      class="h-screen w-[100%] flex justify-center items-center m-0 relative z-[999]"
+    >
+      <div class="flex-col">
+        <p class="header-text">the life of stanley cheah</p>
+        <a href="#about">
+          <p class="learn-text">
+            interested?
+            <span><i class="fa-solid fa-arrow-right learn-arrow"></i></span>
+          </p>
+        </a>
+      </div>
+    </div>
+
+    <header class="bg-transparent z-[999] top-0 static md:sticky w-100">
+      <nav class="flex justify-between items-center w-[92%] mx-auto z-20">
+        <div></div>
+        <div
+          class="nav-links z-[999] mt-[20px] duration-700 md:static absolute bg-white/80 md:bg-white/80 p-3 md:border-4 md:rounded-full md:border-white/100 md:min-h-fit min-h-[40vh] rounded-[10px] md:left-0 md:right-0 min-w-[115px] right-0 top-[-350px] mr-[15px] md:mr-[0px] md:w-auto w-[25vw] py-[20px] md:py-[10px] flex items-center px-5"
+        >
+          <ul
+            class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 text-[13px] min-[520px]:text-[16px]"
+          >
+            <li>
+              <a class="hover:text-gray-500 duration-300" href="#about"
+                >about</a
+              >
+            </li>
+
+            <li>
+              <a class="hover:text-gray-500" href="#skills">skills</a>
+            </li>
+            <li>
+              <a class="hover:text-gray-500" href="#portfolio">portfolio</a>
+            </li>
+
+            <li>
+              <a class="hover:text-gray-500" href="#experience">experience</a>
+            </li>
+            <li>
+              <a class="hover:text-gray-500" href="#review">peer review</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex items-center gap-6 mt-[20px]">
+          <ion-icon
+            onclick="onToggleMenu(this)"
+            name="menu"
+            class="text-3xl cursor-pointer md:hidden text-[white]"
+          ></ion-icon>
+        </div>
+      </nav>
+    </header>
+
+    <!-- bg-[url('../assets/yourname.jpg')] bg-cover -->
+    <!-- bg-[#0F0832] -->
+    <section
+      class="min-h-screen flex flex-col justify-center items-center bg-[#141414] pl-[20px]"
+      id="about"
+    >
+      <div class="timeline">
+        <div class="info">
+          <h1 class="text-[60px] font-bold text-white p-0">about</h1>
+          <p>
+            i was born in 2009 at Johor, and have been living there ever since.
+            i love listening to music but i'm not too good at making them.
+          </p>
+          <br />
+          <p>
+            my philosphy in life is
+            <span class="text-red-300 font-bold">memento mori</span>, which is a
+            latin phrase meaning 'remember that you must die.' i believe that
+            the threat of death gives meaning to life.
+          </p>
+        </div>
+
+        <div class="ol-bro">
+          <ol>
+            <li class="!w-[40px] !rounded-l-full">
+              <div>
+                <time>2012 - 2015 </time>
+                i attended kindergarden at BJ Kindeeland at the age of three
+                until i was six. i was a bright kid, or so i was told.
+              </div>
+            </li>
+
+            <li>
+              <div>
+                <time>2016 - 2021</time> for my primary school, i went to SK
+                Saint Joseph. it was an all-boys school so it helped toughened
+                me up for the later stages of my life.
+              </div>
+            </li>
+            <li>
+              <div>
+                <time>2022 - present</time> i currently study at Kolej
+                PERMATA@Pintar due to my luck of having an above average IQ
+                (though i doubt it).
+              </div>
+            </li>
+            <li>
+              <div>
+                <time>2024 - present</time> i joined the Forward College
+                exchange program. there are many skills that i've managed to
+                sharpen throughout my time here.
+              </div>
+            </li>
+
+            <li class="!w-[300px] !rounded-r-full"></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="min-h-screen flex justify-center items-center bg-[#141414]"
+      id="skills"
+    >
+      <div class="flex flex-col">
+        <p class="text-white mb-[15px] italic w-full">
+          these are the skills that i've acquired over the years.
+        </p>
+        <div
+          class="flex flex-row gap-[40px] max-[680px]:gap-[20px] max-[1330px]:flex-col"
+        >
+          <div
+            class="flex flex-row max-[550px]:flex-col max-[550px]:items-center gap-[40px] max-[680px]:gap-[20px]"
+          >
+            <div class="skill-container">
+              <div class="skill">
+                <div class="front front1">
+                  <i class="fa-brands fa-css3-alt text-[180px] text-white"></i>
+                </div>
+                <div class="back back1">
+                  <p class="back-title">CSS</p>
+                  <p class="back-title-desc">Cascading Style Sheet</p>
+                  <p class="back-text">
+                    A style sheet language used for specifying the presentation
+                    and styling of a document written in a markup language such
+                    as HTML or XML.
+                  </p>
+                  <p class="back-skill">Advanced</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-container">
+              <div class="skill">
+                <div class="front front2">
+                  <i class="fa-brands fa-html5 text-[180px] text-white"></i>
+                </div>
+                <div class="back back2">
+                  <p class="back-title">HTML</p>
+                  <p class="back-title-desc">HyperText Markup Language</p>
+                  <p class="back-text">
+                    The standard markup language for documents designed to be
+                    displayed in a web browser. It defines the content and
+                    structure of web content.
+                  </p>
+                  <p class="back-skill">Advanced</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-row max-[550px]:flex-col max-[550px]:items-center gap-[40px] max-[680px]:gap-[20px]"
+          >
+            <div class="skill-container">
+              <div class="skill">
+                <div class="front front3">
+                  <i class="fa-brands fa-python text-[180px] text-white"></i>
+                </div>
+                <div class="back back3">
+                  <p class="back-title">Python</p>
+                  <p class="back-text">
+                    A high-level, general-purpose programming language whose
+                    design philosophy emphasizes code readability with the use
+                    of significant indentation.
+                  </p>
+                  <p class="back-skill">Intermediate</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-container">
+              <div class="skill">
+                <div class="front front4 text-[180px] text-white">
+                  <i class="ri-flutter-fill"></i>
+                </div>
+                <div class="back back4">
+                  <p class="back-title">Flutter</p>
+                  <p class="back-text">
+                    An open-source UI software development kit that can be used
+                    to develop cross platform applications from a single
+                    codebase for the web, Fuchsia, Android, iOS, Linux, macOS,
+                    and Windows.
+                  </p>
+                  <p class="back-skill">Advanced Beginner</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="text-white mt-[15px] italic w-full text-end">
+          they were evaluated based on the
+          <span class="underline hover:text-green-500"
+            ><a
+              href="https://github.com/Semalab/developer-skills-matrix/blob/main/rubric/rubric.md"
+              >Developer Skill Matrix.</a
+            ></span
+          >
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="min-h-screen flex flex-col my-[50px] pt-[70px] items-center text-white bg-[#141414]"
+      id="portfolio"
+    >
+      <ul class="project-filter">
+        <li class="list project-filter-active" data-filter="all">all</li>
+        <li class="list" data-filter="web">websites</li>
+        <li class="list" data-filter="pi">raspberry pi</li>
+        <li class="list" data-filter="scratch">scratch</li>
+        <li class="list" data-filter="other">other</li>
+      </ul>
+
+      <div class="project-container">
+        <div class="project-box web">
+          <img src="./assets/ruru.jpg" alt="" />
+          <a
+            href="https://drive.google.com/drive/folders/1UuwR49nCWtovWpGwEAoMxPipMQf2SrDX?usp=sharing"
+            ><p class="project-box-title underline">first ever website</p></a
+          >
+        </div>
+        <div class="project-box web">
+          <img src="./assets/space.png" alt="" />
+          <p class="project-box-title">website with PHP database</p>
+        </div>
+        <div class="project-box web">
+          <img src="./assets/decafe.png" alt="" />
+          <a href="https://stanlord2009.wixsite.com/decafe"
+            ><p class="project-box-title underline">wix website</p></a
+          >
+        </div>
+        <div class="project-box web">
+          <img src="./assets/site.png" alt="" />
+          <a
+            href="https://sites.google.com/view/cheahlokeyin/about-me?authuser=0"
+            ><p class="project-box-title underline">google site website</p></a
+          >
+        </div>
+        <div class="project-box pi">
+          <img src="./assets/humid.png" alt="" />
+          <p class="project-box-title">humidity sensor</p>
+        </div>
+        <div class="project-box pi">
+          <img src="./assets/monkey.png" alt="" />
+          <p class="project-box-title">opencv2 monkey detector</p>
+        </div>
+        <div class="project-box scratch">
+          <img src="./assets/scratch2.png" alt="" />
+          <a href="https://scratch.mit.edu/projects/608253279/"
+            ><p class="project-box-title underline">first scratch game</p></a
+          >
+        </div>
+        <div class="project-box scratch">
+          <img src="./assets/scratch.png" alt="" />
+          <a href="https://scratch.mit.edu/projects/853094364/"
+            ><p class="project-box-title underline">scratch olympiad game</p></a
+          >
+        </div>
+        <div class="project-box scratch">
+          <img src="./assets/scratch3.png" alt="" />
+          <a href="https://scratch.mit.edu/projects/758336444/"
+            ><p class="project-box-title underline">
+              mdec roadshow scratch game
+            </p></a
+          >
+        </div>
+        <div class="project-box other">
+          <img src="./assets/anime.jpg" alt="" />
+          <p class="project-box-title">anime rating vs members visualization</p>
+        </div>
+        <div class="project-box other">
+          <div class="flex">
+            <img src="./assets/hot1.png" alt="" class="!rounded-tr-[0px]" />
+            <img src="./assets/hot2.png" alt="" class="!rounded-tl-[0px]" />
+          </div>
+          <a
+            href="https://www.canva.com/design/DAFIOjFebP8/WNeziOjFfTWpFu_xW6yCYw/view?utm_content=DAFIOjFebP8&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+            ><p class="project-box-title underline">
+              pixel floor tile prototype
+            </p></a
+          >
+        </div>
+        <div class="project-box other">
+          <img src="./assets/snake.png" alt="" />
+          <p class="project-box-title">javascript two player snake game</p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="min-h-screen flex-col flex justify-center max-[600px]:items-center px-[100px] overflow-hidden bg-[#141414]"
+      id="experience"
+    >
+      <div class="photo-grid">
+        <div class="pic" style="background-image: url('./assets/mdec.jpg')">
+          mdec roadshow
+        </div>
+        <div
+          class="pic pic-wide"
+          style="background-image: url('./assets/juniorskills.jpg')"
+        >
+          juniorskills
+        </div>
+        <div class="pic" style="background-image: url('./assets/yic2021.jpg')">
+          YIC 2021
+        </div>
+        <div class="pic" style="background-image: url('./assets/vic2023.jpg')">
+          VIC 2023
+        </div>
+        <div
+          class="pic pic-tall hover:!text-[1.6rem]"
+          style="background-image: url('./assets/exf2023.jpg')"
+        >
+          young entrepreneur x factor
+        </div>
+        <div
+          class="pic pic-tall pic-wide hover:!text-[3rem]"
+          style="background-image: url('./assets/yic2023.jpg')"
+        >
+          YIC 2023
+        </div>
+        <div
+          class="pic pic-tall"
+          style="background-image: url('./assets/mssd2.jpg')"
+        >
+          mssd basketball 2022
+        </div>
+        <div class="pic" style="background-image: url('./assets/nismunc.jpg')">
+          nismunc
+        </div>
+        <div class="pic" style="background-image: url('./assets/scratch.png')">
+          scratch olympiad
+        </div>
+
+        <div class="pic" style="background-image: url('./assets/mockmun.jpg')">
+          mockmun
+        </div>
+        <div
+          class="pic pic-wide hover:!text-[2rem]"
+          style="background-image: url('./assets/mssd.jpg')"
+        >
+          <p class="drop-shadow-2xl">mssd basketball 2023</p>
+        </div>
+      </div>
+      <p class="text-white mt-[10px] italic text-start text-[18px]">
+        these are the experiences i've had that helped shaped who i am today.
+      </p>
+    </section>
+
+    <section
+      class="min-h-screen flex flex-col justify-center items-center relative"
+      id="review"
+    >
+      <div class="flex-col flex justify-center items-center">
+        <p
+          class="text-white mb-[15px] text-[19px] max-[650px]:text-[16px] italic w-full text-center"
+        >
+          reviews of me from those close to me. it's not biased.
+        </p>
+        <div class="wrapper">
+          <i id="left" class="carousel-arrow fa-solid fa-angle-left"></i>
+          <ul class="carousel">
+            <li class="card">
+              <div class="flex">
+                <div class="flex justify-center items-center">
+                  <div class="img">
+                    <img
+                      src="./assets/charath.jpg"
+                      alt="img"
+                      draggable="false"
+                      class="!mr-[20px]"
+                    />
+                  </div>
+                  <div class="flex-col">
+                    <h2 class="!m-0">Charath Velan A/L Eswaran</h2>
+                    <div class="flex">
+                      <i class="fa-solid fa-star text-yellow-400 mt-[10px]"></i>
+                      <i
+                        class="fa-solid fa-star text-yellow-400 ml-[5px] mt-[10px]"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star text-yellow-400 ml-[5px] mt-[10px]"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star text-yellow-400 ml-[5px] mt-[10px]"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star-half-stroke text-yellow-400 ml-[5px] mt-[10px]"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span class="!text-[1rem]"
+                >"Highly skilled in leadership and also communication."</span
+              >
+            </li>
+            <li class="card">
+              <div class="flex">
+                <div class="flex justify-center items-center">
+                  <div class="img">
+                    <img
+                      src="./assets/jiajin.jpg"
+                      alt="img"
+                      draggable="false"
+                      class="!mr-[20px]"
+                    />
+                  </div>
+                  <div class="flex-col">
+                    <h2 class="!m-0">Lew Jia Jin</h2>
+                    <div class="flex">
+                      <i class="fa-solid fa-star text-yellow-400 mt-[10px]"></i>
+                      <i
+                        class="fa-solid fa-star text-yellow-400 ml-[5px] mt-[10px]"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star text-yellow-400 ml-[5px] mt-[10px]"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star text-yellow-400 ml-[5px] mt-[10px]"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star text-yellow-400 ml-[5px] mt-[10px]"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span class="!text-[1rem]"
+                >"Truly amazing. Makes me ponder about the wonders of the
+                world."
+              </span>
+            </li>
+            <li class="card">
+              <div class="flex">
+                <div class="flex justify-center items-center">
+                  <div class="img">
+                    <img
+                      src="./assets/logan.jpg"
+                      alt="img"
+                      draggable="false"
+                      class="!mr-[20px]"
+                    />
+                  </div>
+                  <div class="flex-col">
+                    <h2 class="!m-0">Logan A/L Kannan</h2>
+                    <div class="flex">
+                      <i class="fa-solid fa-star text-yellow-400 mt-[10px]"></i>
+                      <i
+                        class="fa-solid fa-star text-yellow-400 ml-[5px] mt-[10px]"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star text-yellow-400 ml-[5px] mt-[10px]"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star text-yellow-400 ml-[5px] mt-[10px]"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star text-yellow-400 ml-[5px] mt-[10px]"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star text-yellow-400 ml-[5px] mt-[10px]"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star text-yellow-400 ml-[5px] mt-[10px]"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star text-yellow-400 ml-[5px] mt-[10px]"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span class="!text-[0.9rem]"
+                >"His leadership skills can be compared with many entrepreneurs
+                that have succeeded today."</span
+              >
+            </li>
+            <li class="card">
+              <div class="flex">
+                <div class="flex justify-center items-center">
+                  <div class="img">
+                    <img
+                      src="./assets/john.jpg"
+                      alt="img"
+                      draggable="false"
+                      class="!mr-[20px]"
+                    />
+                  </div>
+                  <div class="flex-col">
+                    <h2 class="!m-0">Jonathan Soh Lee Chen</h2>
+                    <div class="flex">
+                      <i class="fa-solid fa-star text-yellow-400 mt-[10px]"></i>
+                      <i
+                        class="fa-solid fa-star text-yellow-400 ml-[5px] mt-[10px]"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star text-yellow-400 ml-[5px] mt-[10px]"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star text-yellow-400 ml-[5px] mt-[10px]"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star text-yellow-400 ml-[5px] mt-[10px]"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span class="!text-[0.92rem]"
+                >"Stanley truly is a great friend. He will always be there to
+                give help and support me."</span
+              >
+            </li>
+            <li class="card">
+              <div class="flex">
+                <div class="flex justify-center items-center">
+                  <div class="img">
+                    <img
+                      src="./assets/savi.jpg"
+                      alt="img"
+                      draggable="false"
+                      class="!mr-[20px]"
+                    />
+                  </div>
+                  <div class="flex-col">
+                    <h2 class="!m-0">Savitthran A/L Muthuramu</h2>
+                    <div class="flex">
+                      <i class="fa-solid fa-star text-yellow-400 mt-[10px]"></i>
+                      <i
+                        class="fa-solid fa-star text-yellow-400 ml-[5px] mt-[10px]"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star text-yellow-400 ml-[5px] mt-[10px]"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star text-yellow-400 ml-[5px] mt-[10px]"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star text-gray-300 ml-[5px] mt-[10px]"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span
+                >"Stanley is a self-sufficient student who excels under
+                pressure. He's funny and easily makes friends with
+                anyone."</span
+              >
+            </li>
+            <li class="card">
+              <div class="flex">
+                <div class="flex justify-center items-center">
+                  <div class="img">
+                    <img
+                      src="./assets/aifven.jpg"
+                      alt="img"
+                      draggable="false"
+                      class="!mr-[20px]"
+                    />
+                  </div>
+                  <div class="flex-col">
+                    <h2 class="!m-0">Aifven Vellvient Nelson</h2>
+                    <div class="flex">
+                      <i class="fa-solid fa-star text-yellow-400 mt-[10px]"></i>
+                      <i
+                        class="fa-solid fa-star text-yellow-400 ml-[5px] mt-[10px]"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star text-yellow-400 ml-[5px] mt-[10px]"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star text-yellow-400 ml-[5px] mt-[10px]"
+                      ></i>
+                      <i
+                        class="fa-solid fa-star text-yellow-400 ml-[5px] mt-[10px]"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span
+                >"A decisive and adventurous person, but be careful when he
+                tries out new stuff, bro will be addicted."</span
+              >
+            </li>
+          </ul>
+          <i id="right" class="carousel-arrow fa-solid fa-angle-right"></i>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footerContainer">
+        <div class="socialIcons">
+          <a href="https://discordapp.com/users/704192924442951724"
+            ><i class="fa-brands fa-discord discord"></i
+          ></a>
+          <a href="https://www.instagram.com/stanleman96/?hl=en"
+            ><i class="fa-brands fa-instagram instagram"></i
+          ></a>
+          <a href="https://twitter.com/stanleman96"
+            ><i class="fa-brands fa-x-twitter twitter"></i
+          ></a>
+          <a href="https://www.youtube.com/channel/UC8iFkbTFLOzGQSg_bxcqqew"
+            ><i class="fa-brands fa-youtube youtube"></i
+          ></a>
+        </div>
+      </div>
+      <div class="footerBottom">
+        <p>&copy;2024 stanleman, all rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="./public/script.js"></script>
+
+    <script src="./public/jquery-3.7.1.js"></script>
+
+    <script type="text/javascript">
+      $(document).on("click", ".project-filter li", function () {
+        $(this)
+          .addClass("project-filter-active")
+          .siblings()
+          .removeClass("project-filter-active");
+      });
+
+      $(document).ready(function () {
+        $(".list").click(function () {
+          const value = $(this).attr("data-filter");
+          if (value == "all") {
+            $(".project-box").show("1000");
+          } else {
+            $(".project-box")
+              .not("." + value)
+              .hide("1000");
+            $(".project-box")
+              .filter("." + value)
+              .show("1000");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
